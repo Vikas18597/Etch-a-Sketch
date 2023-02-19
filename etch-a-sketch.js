@@ -28,11 +28,26 @@ for (i = 0; i < 6 ; i++){
         document.getElementById('1st_lvl_div' + i).appendChild(element);
         document.getElementById('2nd_lvl_div' + j + i).style.border = 'solid' ;
         document.getElementById('2nd_lvl_div' + j + i).style.padding = '50px' ;
-    }
+
+        // for changing color while hovering
+        let child_element = document.getElementById('2nd_lvl_div' + j + i);
+        child_element.addEventListener("mouseover", function(){
+            child_element.style.backgroundColor = 'Red';
+        }) ;
+        child_element.addEventListener("mouseout", function(){
+            child_element.style.backgroundColor = 'White';
+        }) ;
+
+    } 
     
 }
 
-
+// document.getElementById('2nd_lvl_div00').addEventListener("mouseover", function(){
+//     document.getElementById('2nd_lvl_div00').style.backgroundColor = 'red'; 
+// }) ; 
+// document.getElementById('2nd_lvl_div00').addEventListener("mouseout", function(){
+//     document.getElementById('2nd_lvl_div00').style.backgroundColor = 'White'; 
+// }) ; 
 
 
 
