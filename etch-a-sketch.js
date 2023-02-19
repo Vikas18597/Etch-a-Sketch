@@ -26,13 +26,13 @@ for (i = 0; i < 6 ; i++){
         let text = document.createTextNode("Child div no. ( " + j + ", " + i +" )");
         element.appendChild(text);
         document.getElementById('1st_lvl_div' + i).appendChild(element);
-        document.getElementById('2nd_lvl_div' + j + i).style.border = 'solid' ; 
+        document.getElementById('2nd_lvl_div' + j + i).style.border = 'solid' ;
+        document.getElementById('2nd_lvl_div' + j + i).style.padding = '50px' ;
     }
     
 }
 
-let x = document.getElementById('.2nd_lvl_div0')
-console.log(x)
+
 
 
 
